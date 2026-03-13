@@ -108,19 +108,20 @@ const Navbar = () => {
 
           {/* Desktop CTA Buttons */}
           <div className="hidden lg:flex items-center gap-3">
-            <motion.div
+            <motion.a
               initial={{ opacity: 0, x: 20 }}
               animate={{ opacity: 1, x: 0 }}
               transition={{ delay: 0.6 }}
+              whileHover={{ scale: 1.05 }}
+              whileTap={{ scale: 0.95 }}
+              href="https://drive.google.com/file/d/1kKSGmFPTd_lwPlb8ho7KN6crWPrhhizB/view?usp=sharing"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 px-4 py-2 rounded-lg text-sm font-medium border border-primary/30 text-primary hover:bg-primary/10 hover:border-primary/50 transition-all duration-300"
             >
-              <a
-                href="#"
-                className="inline-flex items-center gap-2 px-4 py-2 rounded-lg text-sm font-medium border border-primary/30 text-primary hover:bg-primary/10 hover:border-primary/50 transition-all duration-300"
-              >
-                <Download size={15} />
-                Resume
-              </a>
-            </motion.div>
+              <Download size={15} />
+              Resume
+            </motion.a>
             <motion.div
               initial={{ opacity: 0, x: 20 }}
               animate={{ opacity: 1, x: 0 }}
@@ -189,13 +190,19 @@ const Navbar = () => {
                 transition={{ delay: 0.4 }}
                 className="pt-4 flex gap-3"
               >
-                <a
-                  href="#"
-                  className="flex-1 inline-flex items-center justify-center gap-2 px-4 py-3 rounded-xl text-sm font-medium border border-primary/30 text-primary"
+                {/* Mobile Resume button fixed */}
+                <motion.a
+                  whileHover={{ scale: 1.05 }}
+                  whileTap={{ scale: 0.95 }}
+                  href="https://drive.google.com/file/d/1kKSGmFPTd_lwPlb8ho7KN6crWPrhhizB/view?usp=sharing"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex-1 inline-flex items-center justify-center gap-2 px-4 py-3 rounded-xl text-sm font-medium border border-primary/30 text-primary transition-all duration-300"
                 >
                   <Download size={15} />
                   Resume
-                </a>
+                </motion.a>
+
                 <Link
                   to="/contact"
                   onClick={() => setIsOpen(false)}
