@@ -141,8 +141,8 @@ function FloatingGeometry() {
 
 const ParticleBackground = () => {
   return (
-    <div className="fixed inset-0 -z-10">
-      <Canvas camera={{ position: [0, 0, 6], fov: 70 }}>
+    <div className="fixed inset-0 -z-10" style={{ width: "100vw", height: "100vh" }}>
+      <Canvas camera={{ position: [0, 0, 6], fov: 70 }} style={{ width: "100%", height: "100%" }}>
         <ambientLight intensity={0.4} />
         <pointLight position={[8, 5, 5]} intensity={0.4} color="#22c55e" />
         <pointLight position={[-6, -3, 3]} intensity={0.3} color="#14b8a6" />
