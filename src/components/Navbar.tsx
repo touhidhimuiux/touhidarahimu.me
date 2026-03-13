@@ -114,7 +114,7 @@ const Navbar = () => {
               transition={{ delay: 0.6 }}
             >
               <a
-                href="#"
+                href="https://drive.google.com/file/d/1kKSGmFPTd_lwPlb8ho7KN6crWPrhhizB/view?usp=sharing"
                 className="inline-flex items-center gap-2 px-4 py-2 rounded-lg text-sm font-medium border border-primary/30 text-primary hover:bg-primary/10 hover:border-primary/50 transition-all duration-300"
               >
                 <Download size={15} />
