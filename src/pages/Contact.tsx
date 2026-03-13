@@ -239,7 +239,7 @@ const Contact = () => {
     ))}
 
     {/* WhatsApp CTA */}
-    {/* <button
+    <button
       onClick={handleWhatsApp}
       className="flex items-center gap-4 border border-border/50 bg-card/80 p-4 rounded-sm hover:border-primary transition w-full"
     >
@@ -249,7 +249,7 @@ const Contact = () => {
         <p className="text-xs text-muted-foreground">Quick response • Usually replies within hours</p>
       </div>
       <ArrowUpRight size={16} className="text-muted-foreground ml-auto flex-shrink-0" />
-    </button> */}
+    </button>
 
     {/* Availability */}
     <div className="border border-border/50 bg-card/80 p-4 rounded-sm">
