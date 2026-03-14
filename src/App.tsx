@@ -17,6 +17,7 @@ import Events from "./pages/Events";
 import Contact from "./pages/Contact";
 import NotFound from "./pages/NotFound";
 import Services from "./pages/Services";
+import WhatsAppChat from "@/components/WhatsAppChat";
 
 const queryClient = new QueryClient();
 
@@ -42,6 +43,8 @@ const App = () => (
             <Route path="/contact" element={<Contact />} />
             <Route path="*" element={<NotFound />} />
           </Routes>
+           <WhatsAppChat />
+
         </AnimatePresence>
       </BrowserRouter>
     </TooltipProvider>
